@@ -39,7 +39,7 @@ class _TestScreenState extends State<TestScreen> {
     _initSounds();
 
     //問題を作るメソッド
-    setQuestion();
+    //setQuestion();
   }
 
   //メモリのロードは非同期処理で行う。
@@ -47,11 +47,11 @@ class _TestScreenState extends State<TestScreen> {
   _initSounds() async{
     try{
       //②soundpoolクラスのインスタンス作成
-      _soundpool = Soundpool(); //initStateの外でも良い？
-      _soundIds[0] = await loadSound("assets/sounds/sound_correct.mp3");
+     // _soundpool = Soundpool(); //initStateの外でも良い？
+      //_soundIds[0] = await loadSound("assets/sounds/sound_correct.mp3");
 
     } on IOException catch(error){
-      print("エラーの内容は：$error")
+      print("エラーの内容は：$error");
     }
   }
 

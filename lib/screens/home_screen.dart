@@ -55,7 +55,7 @@ class _HomeScreenState extends State<HomeScreen> {
                 },
                 items: _menuItems,
              ),
-             Expanded(//復習。
+             Expanded(
                child: Container(
                  alignment: Alignment.bottomCenter, //特定の位置に配置したい場合alignmentが使える。
                  padding: EdgeInsets.only(bottom: 12.0),//下に隙間を少し欲しいケース
